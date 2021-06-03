@@ -1,0 +1,16 @@
+.Weather {
+  border: 1px solid #dadce1;
+  border-radius: 4px;
+}
+
+.Weather li {
+  list-style: none;
+}
+
+.Weather img {
+  display: inline-block;
+  vertical-align: top;
+  height: 60px;
+  margin-top: unset;
+  width: 60px;
+}
