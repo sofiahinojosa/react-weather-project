@@ -7,10 +7,22 @@
   list-style: none;
 }
 
+.Weather ul {
+  padding-left: 0;
+}
+
 .Weather img {
   display: inline-block;
   vertical-align: top;
   height: 60px;
   margin-top: unset;
   width: 60px;
+}
+
+.Weather input {
+  margin: 5px;
+}
+
+.Weather button {
+  margin: 5px;
 }
