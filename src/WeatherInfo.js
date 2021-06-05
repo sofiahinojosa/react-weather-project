@@ -8,7 +8,7 @@ export default function WeatherInfo(props) {
 
       <ul>
         <li>
-      <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="cloudy" />
+      <img src={props.data.iconUrl} alt="cloudy" />
       </li>
       <li>
         <FormattedDate date={props.data.date} />
