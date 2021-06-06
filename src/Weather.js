@@ -16,7 +16,8 @@ export default function Weather(props) {
       city: response.data.name,
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`,
+      coordinates: response.data.coord
     });
     setReady(true);
   }
@@ -53,7 +54,7 @@ export default function Weather(props) {
         </div>
       </form>
       <WeatherInfo data={weatherData} />
-      <WeatherForecast />
+      <WeatherForecast coordinates={weatherData.coord} />
     </div>
   );
   } else {
