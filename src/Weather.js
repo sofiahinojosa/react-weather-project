@@ -49,7 +49,7 @@ export default function Weather(props) {
         <input className="form-control" type="text" placeholder="Enter a city…" aria-label="default input example" onChange={handleCityChange} />
         </div>
         <div className="col-3">
-        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="submit" className="btn btn-primary">Search</button>
         </div>
         </div>
       </form>
