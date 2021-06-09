@@ -39,8 +39,6 @@ export default function Weather(props) {
   }
 
   if (ready) {
-
-
     return(
     <div className="Weather">
 
