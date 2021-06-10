@@ -22,6 +22,7 @@ export default function Weather(props) {
     });
     setReady(true);
   }
+
   
   function search() {
   const apiKey = "d14d0f8b82e436963f07545c57b531cb";

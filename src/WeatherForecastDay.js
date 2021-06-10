@@ -1,6 +1,6 @@
-import React from "react";
-
+import React, { useState } from "react";
 export default function WeatherForecastDay(props) {
+  console.log(props)
   function maxTemperature() {
     let temperature = Math.round(props.data.temp.max);
     return `${temperature}º`;
@@ -20,10 +20,16 @@ export default function WeatherForecastDay(props) {
     return days[day];
   }
 
+  /*console.log(props)
+  const [link, setLink] = useState(null);
+  setLink(props.weather[0].icon)
+  <img src="https://openweathermap.org/img/wn/01d.png" alt="yes"></img>
+  */
+
   return (
     <div>
       <div className="WeatherForecast-day">{day()}</div>
-          <img src="https://openweathermap.org/img/wn/01d.png" alt="yes"></img>
+          
           
           <div className="WeatherForecast-temperatures">
           <span className="WeatherForecast-temperature-max">{maxTemperature()}</span> 
